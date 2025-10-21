@@ -12,11 +12,12 @@ st.dataframe(df)
 
 # Botão de download abaixo da tabela
 st.download_button(
-    label="⬇️ Baixar arquivo CSV",
+    label="⬇️ Baixar a tabela",
     data=df.to_csv(index=False, sep=";").encode("utf-8"),
     file_name="indices_correcao.csv",
     mime="text/csv"
 )
+
 
 
 
